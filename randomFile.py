@@ -19,7 +19,7 @@ use pythone to run cli commands
 
 #InstanceId": "i-0831ba29a031889ff"
 
-def addTags(instance_id,tag_key,tag_value):
+def addTagsV2(instance_id,tag_key,tag_value):
     #Using subprocess to run aws cli command
     try:
         aws_command = f" aws ec2 create-tags --resources {instance_id} --tags Key={tag_key},Value={tag_key}"
